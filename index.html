@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of Website -->
+    <title>To-Do List</title>
+
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="todo-app"> <!--white box in website -->
+
+            <h2>To Do</h2>
+
+            <img src="images/Icon.png" alt="" class="icon">
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Write a task">
+                <button onclick="addTask()" class = "taskButton">Add</button>
+            </div>
+
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>  -->
+            </ul>
+
+        </div>
+
+        <div class="coinContainer">
+            <h2>Coin Counter</h2>
+
+            <img src="images/Coin.png" alt="">
+
+            <p id="coinText"></p>
+
+        </div>
+
+        <button onclick="openShop()" class = "shopButton"></button>
+
+        <div class = "shopMenu" id = "shopMenu">
+            <button onclick="buyPink()" class = "shopPink" id = "shopPink"> </button>
+
+             <p id="">5</p>
+             <img src="images/Coin.png" alt="" class = "pinkImg" id = "pinkImg">
+        </div>
+
+       <div class = "info" id = "info">
+        <p onclick="this.style.display='none'">Remove checked-off tasks to earn coins! (click to hide)</p>
+       </div>
+
+       <img src = "images/bonsai.png" alt="" id = "bonsai" class = "bonsai">
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+
+</html>
