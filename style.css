@@ -134,6 +134,43 @@ input{
     top: 67px;
 }
 
+.shopDog{
+    display:block;
+    position:absolute;
+    bottom: 110px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/dog.png);
+    background-size: cover;
+    image-rendering: pixelated;
+    border-radius: 10px;
+    padding: 20px;  
+    text-align: center;
+    outline: solid;
+    outline-color: #000;
+    outline-width: 2px;
+}
+
+.shopMenu .dogImg{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 22px;
+    top: 143px;
+}
+
+.shopMenu .dogText{
+    position: absolute;
+    top: 149px;
+    left:-30px;
+}
+
+.shopDog:hover{
+    opacity:50%;
+    cursor: pointer;
+}
+
 .shopMenu p{
     position: relative;
     font-size: 12px;
@@ -261,6 +298,14 @@ ul li span:hover{
     width: 200px;
     height: 200px;
     top: 60px;
+}
+
+.dog{
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+    top: 300px;
 }
 
 .press-start-2p-regular {

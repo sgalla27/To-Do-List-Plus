@@ -6,9 +6,14 @@ const shopMenu = document.getElementById("shopMenu");
 const shopPink = document.getElementById("shopPink");
 const pinkText = document.getElementById("pinkText");
 const pinkImg = document.getElementById("pinkImg");
+const shopDog = document.getElementById("shopDog");
+const dogText = document.getElementById("dogText");
+const dogImg = document.getElementById("dogImg");
 const bonsai = document.getElementById("bonsai");
+const dog = document.getElementById("dog");
 pText.innerHTML = coinCounter;
 let pinkBought = false;
+let dogBought = false;
 
 
 function addTask(){
@@ -93,6 +98,24 @@ function buyPink(){
     }
 }
 
+function buyDog(){
+    if(coinCounter == 10)
+    {
+        coinCounter -= 10;
+        pText.innerHTML = coinCounter;
+        dogBought = true;
+        console.log("BOUGHT!")
+        shopDog.style.display = 'none';
+        dogText.style.display = 'none';
+        dogImg.style.display = 'none';
+        dog.style.display = 'block';
+    }
+    else
+    {
+        alert("Need more coins!");
+    }
+}
+
 function openShop(){
     if(shopMenu.style.display == 'none' || shopMenu.style.display == ''){
         shopMenu.style.display = 'block';
@@ -101,6 +124,11 @@ function openShop(){
             pinkText.style.display = 'block';
             pinkImg.style.display = 'block';
         }
+        if(dogBought != true){
+            shopDog.style.display = 'block';
+            dogText.style.display = 'block';
+            dogImg.style.display = 'block';
+        }
         
     }
     else{
@@ -108,6 +136,10 @@ function openShop(){
         shopPink.style.display = 'none';
         pinkText.style.display = 'none';
         pinkImg.style.display = 'none';
+        shopDog.style.display = 'none';
+        dogText.style.display = 'none';
+        dogImg.style.display = 'none';
+
     }
 }
 
